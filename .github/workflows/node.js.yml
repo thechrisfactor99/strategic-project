@@ -4,7 +4,7 @@
 name: Basic Testing Workflow
 
 on:
-  workflow_trigger:
+  workflow_dispatch:
 
 jobs:
   unit-test:
