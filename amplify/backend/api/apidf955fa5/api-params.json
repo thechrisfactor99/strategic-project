@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/debts",
+      "lambdaFunction": "strategicprojectcaceba61d4",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/debts"
+    }
+  ],
+  "resourceName": "apidf955fa5",
+  "apiName": "apidf955fa5",
+  "functionArns": [
+    {
+      "lambdaFunction": "strategicprojectcaceba61d4"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-strategicprojectca-dev-63101-authRole",
+    "unAuthRoleName": "amplify-strategicprojectca-dev-63101-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "strategicprojectcaceba61d4",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

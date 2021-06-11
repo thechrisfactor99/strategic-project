@@ -1,0 +1,12 @@
+type Debt @model {
+  id: ID!
+  creditor: String!
+  firstName: String!
+  lastName: String!
+  minPayPerc: Float!
+  balance: Int!
+}
+
+type Mutation {
+  batchDeleteDebts(debts: [DeleteDebtInput]): [Debt]
+}
