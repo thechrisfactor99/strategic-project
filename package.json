@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "test": "jest",
-    "test:integrations": "jest --env=jsdom --runInBand --testMatch \"**/tests/integration/*\""
-  },
+    "test": "jest --env=jsdom"
+      },
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",

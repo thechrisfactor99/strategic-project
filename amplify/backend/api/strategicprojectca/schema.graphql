@@ -6,7 +6,3 @@ type Debt @model {
   minPayPerc: Float!
   balance: Int!
 }
-
-type Mutation {
-  batchDeleteDebts(debts: [DeleteDebtInput]): [Debt]
-}

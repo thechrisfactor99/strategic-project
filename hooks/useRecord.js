@@ -38,8 +38,11 @@ const useRecord = (item) => {
 
     const validation = handleValidateDebt(record)
 
-    const addDebt = await handleAddDebt(record)
-    console.log(addDebt)
+    let addDebt
+    if(validation.status == 'Success'){
+      const addDebt = await handleAddDebt(record)
+      console.log(addDebt)
+    }
 
     setStatus(validation)
     setRecord(item)

@@ -23,8 +23,9 @@ const TablePage = () => {
 	const {items, toggleSelect, filterList, sumBalance, removeItems} = useList()
 
 	return (
-		<div className="container mx-auto">
-		<MainNav />
+		<div className="container mx-auto overflow-auto">
+			<MainNav />
+			<div>
 			<h1 className="text-center">Debt Ledger</h1>
 			<Table toggleSelect={toggleSelect} items={items} />
 			<div className="my-3 flex justify-between mx-3 text-nav-primary	color-text-gray-dark">
@@ -35,6 +36,7 @@ const TablePage = () => {
 			<div className="my-3 flex">
 				<Button id="addDebt" onClick={toggleForm.handleToggle} variant="primary" label="Add Debt"/>
 				<Button data-testid="removeDebt" id="removeDebt" variant="secondary" onClick={toggleRemoveAlert.handleToggle} label="Remove Debt" />
+		    </div>
 		    </div>
 		    <Overlay variant="center" toggleOverlay={toggleForm.handleToggle} display={toggleForm.toggle}>
 				<Card>
